@@ -36,7 +36,7 @@ envguard = "envguard.cli:main"
 [project.urls]
 Homepage = "https://github.com/Nashma-Nadeer/envguard"
 Repository = "https://github.com/Nashma-Nadeer/envguard"
-"Bug Tracker" = "https://github.com/Nashma-Ndeer/envguard/issues"
+"Bug Tracker" = "https://github.com/Nashma-Nadeer/envguard/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
