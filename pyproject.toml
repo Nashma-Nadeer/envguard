@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envguard"
+version = "0.1.0"
+description = "🛡️ Scan .env files for exposed secrets, weak values, and missing variables."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Nashma Nadeer", email = "nashmanadeer18@gmail.com" }
+]
+keywords = ["security", "dotenv", "env", "secrets", "cli", "devtools"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+  "typer>=0.12",
+  "rich>=13",
+]
+
+[project.scripts]
+envguard = "envguard.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Nashma-Nadeer/envguard"
+Repository = "https://github.com/Nashma-Nadeer/envguard"
+"Bug Tracker" = "https://github.com/Nashma-Ndeer/envguard/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["envguard*"]
